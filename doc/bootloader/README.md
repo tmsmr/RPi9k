@@ -58,7 +58,7 @@ With this configuration, the EEPROM will be write-protected when the jumper `EEP
 - (Fit `EEPROM_nWP` to write-protect the EEPROM)
 
 ## Resources
-- https://www.raspberrypi.org/documentation/computers/compute-module.html#steps-to-flash-the-emmc
+- https://www.raspberrypi.org/documentation/computers/compute-module.html
 - https://github.com/raspberrypi/usbboot
 - https://datasheets.raspberrypi.org/cm4io/cm4io-datasheet.pdf
 - https://www.raspberrypi.org/documentation/computers/raspberry-pi.html#BOOT_ORDER

@@ -34,6 +34,12 @@ unzip 2021-05-07-raspios-buster-arm64-lite.zip
 - Write image: `sudo dd if=2021-05-07-raspios-buster-arm64-lite.img of=/dev/DEVICE bs=4M status=progress`
 - Remove `nRPI_BOOT` to enable the normal boot mode
 
+### 4. Enable USB ports
+The USB ports on the CM4 / CM4IO are disabled by default. If you are not going to run the OS headless, you probably want to enable the USB ports:
+1. Mount the target's `/boot`: e.g. `sudo mount /dev/sda1 /mnt`
+2. Append `dtoverlay=dwc2,dr_mode=host` to `/mnt/config.txt`
+3. Unmount: `sudo umount /mnt`
+
 ## Resources
 - https://www.raspberrypi.org/documentation/computers/compute-module.html#steps-to-flash-the-emmc
 - https://github.com/raspberrypi/usbboot
